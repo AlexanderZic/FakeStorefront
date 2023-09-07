@@ -8,3 +8,16 @@ footer {
   bottom: 0; /* Position the footer at the bottom edge */
   width: 100%; /* Make the footer span the full width of the viewport */
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#display {
+  text-align: center;
+  margin-top: 20px;
+}
+
