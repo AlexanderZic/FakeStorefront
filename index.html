@@ -21,13 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Cart</a>
+            <a class="nav-link" href="#" id="cartLink" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Electronics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Jewelry</a>
+            <a class="nav-link" href="#">Jewelery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Men's Clothing</a>
@@ -40,16 +40,38 @@
     </div>
   </nav>
 
-  <!-- Div with display ID -->
-  <div id="display">
+  <!-- Bootstrap Card Container -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="cardContainer">
+      <!-- Your cards will be displayed here -->
+    </div>
+  </div>
+
+  <!-- Cart will be displayed here -->
+  <div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="cartItems">
+          <!-- Cart items will be displayed here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Footer content -->
-  <div>
-    <footer>
+  <footer>
+    <div class="footer">
       <h6>&copy; 2023 Unit 4 Project ~ Upright Education</h6>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
